@@ -4,29 +4,29 @@ const Skills = () => {
   const skills = [
     {
       logo: "logo-html5",
-      level: "Advance",
-      count: 86,
+      level: "HTML",
+      count: 100,
     },
     {
       logo: "logo-css3",
-      level: "Intermediate",
-      count: 80,
+      level: "CSS",
+      count: 100,
     },
     {
       logo: "logo-nodejs",
-      level: "Beginner",
-      count: 40,
+      level: "NODE JS",
+      count: 100,
     },
 
     {
       logo: "logo-javascript",
-      level: "Beginner",
-      count: 50,
+      level: "JAVASCRIPT",
+      count: 100,
     },
     {
       logo: "logo-react",
-      level: "Intermediate",
-      count: 80,
+      level: "REACT",
+      count: 100,
     },
   ];
   return (
