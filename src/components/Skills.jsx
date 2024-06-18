@@ -1,34 +1,73 @@
 import React from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faHtml5,
+  faCss3Alt,
+  faNodeJs,
+  faJsSquare,
+  faReact,
+  faGitAlt,
+  faGithub,
+  faSass,
+  faFigma,
+
+} from "@fortawesome/free-brands-svg-icons";
+import { faDatabase } from "@fortawesome/free-solid-svg-icons";
 
 const Skills = () => {
   const skills = [
     {
-      logo: "logo-html5",
+      logo: faHtml5,
       level: "HTML",
       count: 100,
     },
     {
-      logo: "logo-css3",
+      logo: faCss3Alt,
       level: "CSS",
       count: 100,
     },
     {
-      logo: "logo-nodejs",
+      logo: faNodeJs,
       level: "NODE JS",
       count: 100,
     },
-
     {
-      logo: "logo-javascript",
+      logo: faJsSquare,
       level: "JAVASCRIPT",
       count: 100,
     },
     {
-      logo: "logo-react",
+      logo: faReact,
       level: "REACT",
       count: 100,
     },
+    {
+      logo: faDatabase,
+      level: "MYSQL",
+      count: 100,
+    },
+    {
+      logo: faGithub,
+      level: "GITHUB",
+      count: 100,
+    },
+    {
+      logo: faGitAlt,
+      level: "GIT",
+      count: 100,
+    },
+    {
+      logo: faSass,
+      level: "SCSS",
+      count: 100,
+    },
+    {
+      logo: faFigma,
+      level: "FIGMA",
+      count: 100,
+    },
   ];
+
   return (
     <section id="skills" className="py-10 bg-gray-800 relative">
       <div className="mt-8 text-gray-100 text-center">
@@ -37,7 +76,7 @@ const Skills = () => {
         </h3>
         <p className="text-gray-400 mt-3 text-lg">My knowledge</p>
         <div className="flex items-center justify-center mt-12 gap-10 flex-wrap">
-          {skills?.map((skill, i) => (
+          {skills.map((skill, i) => (
             <div
               key={i}
               className="border-2 group border-cyan-600 relative min-w-[10rem] max-w-[16rem] bg-gray-900 p-10 rounded-xl"
@@ -49,7 +88,7 @@ const Skills = () => {
                 className="w-32 h-32 flex items-center justify-center rounded-full"
               >
                 <div className="text-6xl w-28 h-28 bg-gray-900 rounded-full flex items-center justify-center group-hover:text-cyan-600">
-                  <ion-icon name={skill.logo}></ion-icon>
+                  <FontAwesomeIcon icon={skill.logo} />
                 </div>
               </div>
               <p className="text-xl mt-3">{skill.level}</p>
