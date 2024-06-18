@@ -37,6 +37,11 @@ const Skills = () => {
       count: 100,
     },
     {
+      logo: faSass,
+      level: "SCSS",
+      count: 100,
+    },
+    {
       logo: faReact,
       level: "REACT",
       count: 100,
@@ -56,11 +61,7 @@ const Skills = () => {
       level: "GIT",
       count: 100,
     },
-    {
-      logo: faSass,
-      level: "SCSS",
-      count: 100,
-    },
+
     {
       logo: faFigma,
       level: "FIGMA",
